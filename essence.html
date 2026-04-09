@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Work+Sans:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#e7bdb1",
+                        "background": "#f9f9f9",
+                        "inverse-primary": "#ffb961",
+                        "on-primary-container": "#603a00",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "surface-container": "#eeeeee",
+                        "inverse-surface": "#2f3131",
+                        "surface-tint": "#865300",
+                        "surface-container-low": "#f3f3f3",
+                        "surface": "#f9f9f9",
+                        "primary": "#865300",
+                        "tertiary": "#be0036",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#795950",
+                        "on-tertiary-container": "#890024",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#ffddb9",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-fixed-variant": "#920027",
+                        "on-primary-fixed-variant": "#663e00",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#ffdbd0",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#40000c",
+                        "surface-dim": "#dadada",
+                        "tertiary-container": "#ff8e95",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ffb961",
+                        "tertiary-fixed": "#ffdada",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-surface-variant": "#534434",
+                        "outline": "#867461",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-variant": "#e2e2e2",
+                        "surface-bright": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#f39c12",
+                        "on-secondary-fixed-variant": "#5d4037",
+                        "on-secondary-fixed": "#2c160e",
+                        "secondary": "#77574d",
+                        "outline-variant": "#d8c3ad",
+                        "on-primary-fixed": "#2b1700",
+                        "secondary-container": "#fed3c7",
+                        "tertiary-fixed-dim": "#ffb3b6",
+                        "fresh-sage": "#27AE60"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Work Sans"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 2rem;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface font-body text-on-surface" page-essence>
+<\!-- Global Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-[0_8px_30px_rgb(93,64,55,0.04)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<a class="font-headline text-2xl font-bold tracking-tight text-stone-900" href="index.html">Culture &amp; Crust</a>
+<div class="hidden md:flex items-center gap-8">
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="bakery.html">The Bakery</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="ferments.html">The Ferments</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="kitchen.html">The Kitchen</a>
+        <a class="text-amber-600 font-semibold border-b-2 border-amber-600 font-headline italic text-lg" href="essence.html">The Essence</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="equipment.html">Equipment</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-stone-600 cursor-pointer hover:opacity-80 transition-all duration-300">account_circle</span>
+</div>
+</div>
+</nav><main class="pt-32 pb-24">
+<!-- Hero Header Section -->
+<header class="max-w-screen-xl mx-auto px-8 mb-24">
+<div class="flex flex-col md:flex-row items-baseline justify-between mb-8">
+<span class="font-label text-fresh-sage uppercase tracking-widest text-sm font-bold mb-4 md:mb-0">Philosophical Inquiry Vol. 04</span>
+<div class="font-label text-stone-400 text-xs flex gap-4">
+<span>READ TIME: 8 MIN</span>
+<span>/</span>
+<span>POSTED: AUTUMN EQUINOX</span>
+</div>
+</div>
+<h1 class="font-headline italic text-5xl md:text-8xl text-stone-900 leading-tight max-w-4xl">
+                The Rhythms of <span class="text-fresh-sage">Salt</span> and Time.
+            </h1>
+</header>
+<!-- Editorial Content Layout -->
+<article class="max-w-screen-xl mx-auto px-8">
+<div class="editorial-grid">
+<!-- Sidebar Info / Lab Data -->
+<aside class="col-span-12 md:col-span-3 space-y-12">
+<div class="space-y-4">
+<h4 class="tech-hud font-label text-[10px] uppercase tracking-[0.2em] text-stone-400 border-b border-stone-200 pb-2 tech-hud__label">Molecular Dynamics</h4>
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center bg-surface-container-lowest p-3">
+<span class="font-label text-xs text-stone-500">Sodium Chloride</span>
+<span class="font-label text-xs font-bold text-fresh-sage">2.2%</span>
+</div>
+<div class="flex justify-between items-center bg-surface-container-lowest p-3">
+<span class="font-label text-xs text-stone-500">Ambient Temp</span>
+<span class="font-label text-xs font-bold text-fresh-sage">18°C</span>
+</div>
+<div class="flex justify-between items-center bg-surface-container-lowest p-3">
+<span class="font-label text-xs text-stone-500">Fermentation Window</span>
+<span class="font-label text-xs font-bold text-fresh-sage">72H</span>
+</div>
+</div>
+</div>
+<div class="pt-8 italic font-headline text-stone-500 text-lg leading-relaxed">
+                        "To bake is to manage a series of slow-motion explosions, governed by the mineral clock."
+                    </div>
+</aside>
+<!-- Main Narrative -->
+<div class="col-span-12 md:col-span-8 md:col-start-5 space-y-16">
+<section class="space-y-8">
+<p class="font-body text-xl text-stone-700 leading-relaxed first-letter:text-7xl first-letter:font-headline first-letter:mr-3 first-letter:float-left first-letter:text-fresh-sage">
+                            Salt is more than a seasoning; it is the architect of structure. In the quiet darkness of the fermenting vessel, minerals bind to proteins, creating a tension that allows life to flourish. It is the invisible hand that slows the frantic pace of yeast, forcing a measured, thoughtful transformation.
+                        </p>
+<p class="font-body text-xl text-stone-700 leading-relaxed">
+                            We often rush the process, seeking the immediate gratification of the rise. Yet, true depth—the complex sugars, the nuanced acidity—only emerges when time is allowed to stretch. The rhythm of salt is a heartbeat of restriction. It tames the wildness of water and flour, weaving them into a fabric capable of holding air.
+                        </p>
+</section>
+<!-- Asymmetric Image Placement -->
+<div class="relative w-full aspect-[16/9] bg-surface-container-low overflow-hidden">
+<img alt="" class="w-full h-full object-cover grayscale-[20%] mix-blend-multiply opacity-90" data-alt="Minimalist top-down view of coarse sea salt crystals scattered on a smooth grey stone surface with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqa2RgOK8-WkFDCFIw2fOTJFbLanYr053u2PW7PZxdQoYFk9BPhKw3Dvz7FoTLLEcD7XYzkZFCmUQz6LgxsulgAped7BDCPbX7fPCLQqBoW2YDWWKpPs6WC3pb6zMqI7bvS5N9Aka7T1mraZoDhQ6fV0cNuOFx0TW7nOsS7l1dUmAbStv4s36Mi74B5aph9l3C0n4u65vA2cEoq9V0tnx0RnwYYo6scHGKRiQfgIdPn1IU2c3OdXbAtNmIEFUNnCdw1sf0XvYfqzo"/>
+</div>
+<section class="space-y-8">
+<h2 class="font-headline text-4xl text-stone-900 italic">The Mechanics of Inertia</h2>
+<p class="font-body text-xl text-stone-700 leading-relaxed">
+                            Consider the grain. At the microscopic level, salt is performing a violent act of preservation. By drawing moisture away from certain enzymes, it protects the gluten network from premature collapse. It creates a state of dynamic stability.
+                        </p>
+<blockquote class="border-l-4 border-fresh-sage pl-8 py-2 my-12">
+<p class="font-headline text-3xl italic text-stone-800 leading-snug">
+                                Time is the silent ingredient, salt is the conductor. Together, they create a symphony of slow change.
+                            </p>
+</blockquote>
+<p class="font-body text-xl text-stone-700 leading-relaxed">
+                            When we observe a sourdough starter over seventy-two hours, we aren't just watching bubbles. We are witnessing the gradual breakdown of complex starches into digestible energy. We are seeing the rhythm of the laboratory meet the patience of the artisan.
+                        </p>
+</section>
+<!-- Bento-style visual detail -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-8 flex flex-col justify-between aspect-square">
+<span class="font-label text-xs uppercase tracking-widest text-stone-400">01. The Bind</span>
+<div class="space-y-4">
+<h3 class="font-headline text-2xl italic">Protein Realignment</h3>
+<p class="font-body text-sm text-stone-500">Ionic bonds strengthen the network, increasing elasticity and gas retention.</p>
+</div>
+</div>
+<div class="bg-fresh-sage text-white p-8 flex flex-col justify-between aspect-square">
+<span class="font-label text-xs uppercase tracking-widest opacity-70">02. The Pause</span>
+<div class="space-y-4">
+<h3 class="font-headline text-2xl italic">Enzymatic Control</h3>
+<p class="font-body text-sm opacity-80">By regulating protease activity, we prevent the dough from becoming a liquid pool.</p>
+</div>
+</div>
+</div>
+<section class="space-y-8 pt-12">
+<p class="font-body text-xl text-stone-700 leading-relaxed">
+                            In the end, the essence of the craft lies in our ability to step back. To trust the mineral and the clock. As the crust darkens in the heat of the hearth, the salt—which has been there from the beginning—finally takes its bow, providing the sharp crystalline snap that defines the finish.
+                        </p>
+<div class="pt-12 flex items-center gap-6">
+<div class="w-12 h-px bg-stone-300"></div>
+<span class="font-label text-sm text-stone-400">END OF TRANSCRIPT</span>
+</div>
+</section>
+</div>
+</div>
+</article>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-stone-100 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 border-t border-stone-200/20 max-w-screen-2xl mx-auto">
+<div class="space-y-4">
+<div class="font-serif text-xl font-bold text-stone-800 dark:text-stone-200">Culture &amp; Crust</div>
+<p class="font-sans text-sm leading-relaxed text-stone-500">Exploring the intersection of ancient grain traditions and modern scientific rigor.</p>
+</div>
+<div class="space-y-4">
+<h5 class="font-label text-xs uppercase tracking-widest text-stone-900 dark:text-stone-100">Sections</h5>
+<ul class="space-y-2">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-amber-600 transition-colors text-sm font-sans" href="bakery.html">The Bakery</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-amber-600 transition-colors text-sm font-sans" href="ferments.html">The Ferments</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-amber-600 transition-colors text-sm font-sans" href="kitchen.html">The Kitchen</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label text-xs uppercase tracking-widest text-stone-900 dark:text-stone-100">Information</h5>
+<ul class="space-y-2">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-amber-600 transition-colors text-sm font-sans" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-amber-600 transition-colors text-sm font-sans" href="#">Terms of Service</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-amber-600 transition-colors text-sm font-sans" href="#">About the Lab</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label text-xs uppercase tracking-widest text-stone-900 dark:text-stone-100">Newsletter</h5>
+<div class="flex">
+<input class="bg-transparent border-b border-stone-300 focus:border-fresh-sage outline-none py-2 text-sm w-full font-sans" placeholder="Enter email" type="email"/>
+<button class="ml-2 text-fresh-sage font-label text-xs font-bold uppercase tracking-widest">Join</button>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 text-center md:text-left border-t border-stone-200/10">
+<p class="font-sans text-xs text-stone-500">© 2024 Culture &amp; Crust. All rights reserved. As an Amazon Associate, we earn from qualifying purchases.</p>
+</div>
+</footer>
+</body></html>

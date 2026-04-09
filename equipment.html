@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Work+Sans:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#e7bdb1",
+                        "background": "#f9f9f9",
+                        "inverse-primary": "#ffb961",
+                        "on-primary-container": "#603a00",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "surface-container": "#eeeeee",
+                        "inverse-surface": "#2f3131",
+                        "surface-tint": "#865300",
+                        "surface-container-low": "#f3f3f3",
+                        "surface": "#f9f9f9",
+                        "primary": "#865300",
+                        "tertiary": "#be0036",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#795950",
+                        "on-tertiary-container": "#890024",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#ffddb9",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-fixed-variant": "#920027",
+                        "on-primary-fixed-variant": "#663e00",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#ffdbd0",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#40000c",
+                        "surface-dim": "#dadada",
+                        "tertiary-container": "#ff8e95",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ffb961",
+                        "tertiary-fixed": "#ffdada",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-surface-variant": "#534434",
+                        "outline": "#867461",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-variant": "#e2e2e2",
+                        "surface-bright": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#f39c12",
+                        "on-secondary-fixed-variant": "#5d4037",
+                        "on-secondary-fixed": "#2c160e",
+                        "secondary": "#77574d",
+                        "outline-variant": "#d8c3ad",
+                        "on-primary-fixed": "#2b1700",
+                        "secondary-container": "#fed3c7",
+                        "tertiary-fixed-dim": "#ffb3b6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Work Sans"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Work Sans', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Noto Serif', serif; }
+        .mono-font { font-family: 'Space Grotesk', monospace; }
+        .tonal-shift-bg { background-color: #f3f3f3; }
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background antialiased page-equipment">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-[0_8px_30px_rgb(93,64,55,0.04)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<a class="brand-font font-headline text-2xl font-bold tracking-tight text-stone-900" href="index.html">Culture &amp; Crust</a>
+<div class="hidden md:flex items-center gap-8">
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="bakery.html">The Bakery</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="ferments.html">The Ferments</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="kitchen.html">The Kitchen</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="essence.html">The Essence</a>
+        <a class="text-amber-600 font-semibold border-b-2 border-amber-600 font-headline italic text-lg" href="equipment.html">Equipment</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-stone-600 cursor-pointer hover:opacity-80 transition-all duration-300">account_circle</span>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-24 px-8 max-w-screen-2xl mx-auto">
+<!-- Hero Section: Editorial Feel -->
+<section class="mb-32 flex flex-col md:flex-row items-end gap-12">
+<div class="w-full md:w-7/12">
+<span class="mono-font text-xs uppercase tracking-widest text-primary mb-4 block">The Laboratory Arsenal</span>
+<h1 class="text-6xl md:text-8xl font-bold leading-none mb-8">Essential <br/><span class="italic text-primary">Instruments</span>.</h1>
+<p class="text-xl text-secondary max-w-lg leading-relaxed">
+                    A curated selection of the tools that bridge the gap between intuition and precision. Every item is tested in our kitchen lab for durability and performance.
+                </p>
+</div>
+<div class="w-full md:w-5/12 aspect-[4/5] overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="dramatic still life of professional baking tools on a rustic stone surface with warm sunlight and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZIAsqx_-2UiCjqEDkMj8lx9oTP1uDzU3aBnR7hW78h0VsLesngPtEU98KoVo3XuVC7m1Jq4cxQSUlZJTtZc9oZ31cVpnRcr3Vp3vGqM58pW-IIV3ZOPwgNNeioTqgHdUrndYPTt-W1Jiu14eMxyi19x_tbY0Mxj6iH0PgrRZyPA7XTtgyvLdU5xdPCHEdpblM_JXN-OwzodrzgDLDtVRssGSb0OMPzqBoptPEL-Sc0CGOlE54VZNs_bvQHpAzzUPgP3I0tMVZ304"/>
+</div>
+</section>
+<!-- Category: The Bakery Kit -->
+<section class="mb-40">
+<div class="flex justify-between items-baseline mb-16 border-b border-outline-variant/15 pb-6">
+<h2 class="text-4xl font-bold">The Bakery Kit</h2>
+<span class="mono-font text-sm text-stone-400">01 — Sculpting the Crust</span>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Large Featured Item -->
+<div class="md:col-span-8 bg-surface-container-low p-1 rounded-xl overflow-hidden group">
+<div class="relative h-[600px] overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of hand-woven rattan banneton baskets dusted with white flour on a dark wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7oPqIAVCkNr-0NA5MBJKCAReM9LyszjQx_V9awQcFdVJ5Uuv7jsLB11MHvsbPdtSrQJS7LvPtevhCZMeMytrLX1ERtkQHZa4-niUDzQccLrgJKIrFFuA_ywMoZVKILPG55CPjj6a7vd2hcFhavqHpSDo-WHL-SHmNKhE6ATRHzBnlQKS3h-7ruUumtsVSq5tgy6UoNedUgpMzvd6l_pjDdZKA_g4awJ-XPXsKfwIkrciMkiHFzg43lakiYqn3-FHXaXPenrCKERY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+<div>
+<span class="mono-font text-xs text-white/80 bg-white/10 px-2 py-1 rounded backdrop-blur-md mb-3 inline-block">Professional Grade</span>
+<h3 class="text-3xl text-white font-bold mb-2">Artisan Bannetons</h3>
+<p class="text-white/70 max-w-xs text-sm">Natural rattan proofing baskets for the perfect spiral structure.</p>
+</div>
+<a class="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-medium hover:scale-105 transition-transform flex items-center gap-2" href="#">
+                                View on Amazon
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Smaller Item 1 -->
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col h-full group">
+<div class="aspect-square overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="high-saturation macro photo of a stainless steel dough scraper cutting through fresh dough" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARj8ESXMpkncxNda1MZ-wGBvSUo8bvdIBnVaT_YdfolW5KleoMOn6Xs0RkgLnOgJ7JPAM83q_GP6nOALe4cevFYz5XIZKawej3TK-J66Nyr7fas58vOdhyday4szGUiEh3f98fz9s_s0h-5-y8BXFm7tGjZxE2bHpLUQHrmNOdOsKpUs4Cz2u5QTQE5kaAw6KX6uByn7a7sgwvsmU1j3idRkUdgd0OLLwCSTsNzHjRs7zBjva0iM-RseLDSiyb41g8Z829xhf2FSM"/>
+</div>
+<span class="mono-font text-[10px] uppercase text-primary mb-2">Precision Tool</span>
+<h4 class="text-xl font-bold mb-2">Stainless Scrapers</h4>
+<p class="text-stone-500 text-sm mb-6">Ergonomic handle with etched measurements for precise scaling.</p>
+<div class="mt-auto">
+<a class="text-primary font-bold text-sm border-b border-primary/30 hover:border-primary transition-all inline-flex items-center gap-2" href="#">
+                                View on Amazon
+                                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Smaller Item 2 -->
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col h-full group">
+<div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Linen bread bags with minimalist typography on a sun-drenched marble counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVCgVcEimJb-vX1SWgxSDx_c85Eq0MQMPx9kPez0C1saqI59hwYO-bHOgw88kNV70f-m2UxWr70sLbuEu9glXthHS4H7p6G50M4TBMosiU3P2-pvH8kTaGAodcfELbLJzt8SHGLwg3J7SmJheM_N-Buz1F7pgOJoZqMVBXwAVVG4IRJMlUruAFMK3lSv7UQDZ2Hjlll5Vrb8NnqTDHI0YDNirJyH2LHxy2yUcwV5aTOHkUrbtyjPufWDr-aL1rYdHnXPB_OtQQg3U"/>
+</div>
+<h4 class="text-xl font-bold mb-2">Linen Couche</h4>
+<p class="text-stone-500 text-sm mb-6">Heavyweight 100% flax linen for supporting baguettes during proofing.</p>
+<div class="mt-auto">
+<a class="text-primary font-bold text-sm border-b border-primary/30 hover:border-primary transition-all inline-flex items-center gap-2" href="#">
+                                View on Amazon
+                                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Smaller Item 3 -->
+<div class="md:col-span-8 bg-surface-container p-8 rounded-xl flex items-center gap-12 group">
+<div class="w-1/3 aspect-square rounded-full overflow-hidden border-8 border-white">
+<img class="w-full h-full object-cover" data-alt="Close-up of a digital kitchen scale showing precise gram measurements of white flour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQLsTsZt_dDB6LRAm5DKjccs13emnRCI7lCWckk_VNZtlLtyx0MMd3QYZ1x_uor3M6dGSNOVKpXrsu755uJ8dByNnL8O0OeylNgolfxQgbPFcnr3I0hPO6PXIguofI7K9cV0etpeBISzinubIJpxuj75ORH7AFRXJWqQIv-Dol3NZpW4IvByzu9pLoV62mOstlc1u3Kd8r3BnblEuP1ISC3twTQltfizsnF7zddeEJnt3UxSnfLuEixpSiCaZFvVBgeZl8FrwF-ck"/>
+</div>
+<div class="w-2/3">
+<div class="flex items-center gap-3 mb-2">
+<h4 class="text-2xl font-bold">The Precision Scale</h4>
+<div class="bg-primary/10 text-primary mono-font text-[10px] px-2 py-0.5 rounded">Essential</div>
+</div>
+<p class="text-stone-500 mb-6 max-w-sm">Waterproof, high-capacity digital scale with 0.1g accuracy for yeast and salt measurements.</p>
+<a class="bg-stone-900 text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-stone-800 transition-colors inline-block" href="#">
+                            View on Amazon
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Category: The Fermentation Kit -->
+<section class="mb-40">
+<div class="flex justify-between items-baseline mb-16 border-b border-outline-variant/15 pb-6">
+<h2 class="text-4xl font-bold">The Fermentation Kit</h2>
+<span class="mono-font text-sm text-stone-400">02 — Managing the Culture</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Product Card 1 -->
+<div class="flex flex-col group">
+<div class="aspect-[3/4] bg-stone-200 overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Vibrant red glass fermentation weights inside clear mason jars with bubbling vegetables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdY9Qn26F5PnBZUcTbwo2DBfPZ3JL7LngwsJkRLElW5YzbbxqgQ9r8vKuEP7YCMig4qHO0YDkAZIwaLxUC7vN72J1ftqo0b0-bypTogvFp05CgIey6y3h2eUozeKdPpB9PufsvUHmW1kfuBms82OtGOuySzTFmZB_TQ3WjdD987T91foe_P_1_h2S610qlqOCCwgHlSZH5s8Y6rWdDExGPd6xX_xIGaKllviM-FGh2XpRJxt6lzLFYRLBp6AbVIC7LwDzFxj6pXYw"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-tertiary text-white mono-font text-[10px] px-2 py-1 rounded">pH Control</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold mb-2 italic">Glass Weights</h3>
+<p class="text-stone-500 text-sm mb-6 leading-relaxed">Heavy-duty tempered glass weights to keep ferments submerged beneath the brine level.</p>
+<a class="w-full py-4 border border-stone-200 text-center text-sm font-bold tracking-widest hover:bg-stone-900 hover:text-white transition-all" href="#">
+                        VIEW ON AMAZON
+                    </a>
+</div>
+<!-- Product Card 2 -->
+<div class="flex flex-col group md:mt-12">
+<div class="aspect-[3/4] bg-stone-200 overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Plastic three-piece fermentation airlocks on top of large glass jars filled with kombucha" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7DFGkIeiW-aplCBqj-PlyFMHaPzd85wwub40zj-YY9-9f9eACK4nQNe2UhR4sGQ7taT58ylCzPeTrbNiqveEvrhjKU23qMBc3ENNyNP_HoXDiHV72p9DDXy6IxUkwQRrigSGPjcD_nUK_ZrU8wLFR444WRb6cYGbWHoihDPqq4DSHTglKhaVydGf-DuqpEBidG_EXcLeN6zh2toLZle-2hcf6v8NvzyytZMEWZcKDAjAlKXOGxX2EacjilkvE3Qc5I_yzoPWgM0o"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-primary text-white mono-font text-[10px] px-2 py-1 rounded">Airflow Tech</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold mb-2 italic">Precision Airlocks</h3>
+<p class="text-stone-500 text-sm mb-6 leading-relaxed">Three-piece airlocks that allow CO2 to escape while preventing oxygen entry.</p>
+<a class="w-full py-4 border border-stone-200 text-center text-sm font-bold tracking-widest hover:bg-stone-900 hover:text-white transition-all" href="#">
+                        VIEW ON AMAZON
+                    </a>
+</div>
+<!-- Product Card 3 -->
+<div class="flex flex-col group">
+<div class="aspect-[3/4] bg-stone-200 overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Digital thermometer probe inserted into a loaf of bread, showing bright red digital numbers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp4pJydceKHKEhbWDXusZfgiaqNIWnl2HR52h2EBzOnJmObHUDE28tp92i8Snp6Uqkx_BVzoROBqhGDAO9IYhREyu7z6jGxVVAENP4IMtbYdHk4aSuPqS-7v68lcBXqNmXq5FRkrd8tYsnNoHxfi-T1LGXHZtsR2v48MCL3olzMTm5piKic9IbplcGCzasNinGQceh3xAcdRaGVdDOZ6mK-WLswiVvWMbqCpgTh6b_89u7aX8Ekdfw8Xrg5ByeXvp3FZdofPUGY7Q"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-stone-900 text-white mono-font text-[10px] px-2 py-1 rounded">Lab Instrument</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold mb-2 italic">Probe Thermometer</h3>
+<p class="text-stone-500 text-sm mb-6 leading-relaxed">Instant-read digital thermometer for monitoring internal crumb temperature.</p>
+<a class="w-full py-4 border border-stone-200 text-center text-sm font-bold tracking-widest hover:bg-stone-900 hover:text-white transition-all" href="#">
+                        VIEW ON AMAZON
+                    </a>
+</div>
+</div>
+</section>
+<!-- Laboratory Data Quote -->
+<section class="py-24 px-12 bg-stone-900 text-white rounded-3xl relative overflow-hidden">
+<div class="relative z-10 max-w-3xl mx-auto text-center">
+<span class="tech-hud mono-font tech-hud__label text-primary text-xs tracking-widest block mb-8">LABORATORY NOTES</span>
+<p class="text-3xl md:text-5xl font-serif italic leading-tight mb-12">
+                    "Precision in the toolkit allows for freedom in the technique. When the variables are controlled, the artistry can truly begin."
+                </p>
+<div class="flex justify-center gap-8 tech-hud">
+<div class="text-center">
+<div class="mono-font tech-hud__value text-primary text-xl font-bold">100%</div>
+<div class="mono-font tech-hud__label text-[10px] opacity-50 uppercase">Reliability</div>
+</div>
+<div class="text-center">
+<div class="mono-font tech-hud__value text-primary text-xl font-bold">0.1g</div>
+<div class="mono-font tech-hud__label text-[10px] opacity-50 uppercase">Tolerance</div>
+</div>
+<div class="text-center">
+<div class="mono-font tech-hud__value text-primary text-xl font-bold">Grade A</div>
+<div class="mono-font tech-hud__label text-[10px] opacity-50 uppercase">Materials</div>
+</div>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[120px] -mr-48 -mt-48"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-tertiary/10 blur-[120px] -ml-48 -mb-48"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-stone-100 border-t border-stone-200/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="brand-font text-xl font-bold text-stone-800 mb-6">Culture &amp; Crust</div>
+<p class="text-stone-500 text-sm leading-relaxed mb-6">Exploring the intersection of ancient grain traditions and modern culinary science.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="mono-font text-[10px] font-bold uppercase tracking-widest text-stone-400 mb-2">Sections</h5>
+<a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="bakery.html">The Bakery</a>
+<a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="ferments.html">The Ferments</a>
+<a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="equipment.html">Equipment</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="mono-font text-[10px] font-bold uppercase tracking-widest text-stone-400 mb-2">Journal</h5>
+<a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="#">About the Lab</a>
+<a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="#">Contact</a>
+<a class="text-amber-600 underline text-sm" href="#">Affiliate Disclosure</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="mono-font text-[10px] font-bold uppercase tracking-widest text-stone-400 mb-2">Legal</h5>
+<a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-stone-200/40 text-center md:text-left">
+<p class="text-stone-400 text-xs font-sans leading-relaxed">
+                © 2024 Culture &amp; Crust. All rights reserved. As an Amazon Associate, we earn from qualifying purchases.
+            </p>
+</div>
+</footer>
+</body></html>

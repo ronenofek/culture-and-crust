@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Work+Sans:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#e7bdb1",
+                        "background": "#f9f9f9",
+                        "inverse-primary": "#ffb961",
+                        "on-primary-container": "#603a00",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "surface-container": "#eeeeee",
+                        "inverse-surface": "#2f3131",
+                        "surface-tint": "#865300",
+                        "surface-container-low": "#f3f3f3",
+                        "surface": "#f9f9f9",
+                        "primary": "#865300",
+                        "tertiary": "#be0036",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#795950",
+                        "on-tertiary-container": "#890024",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#ffddb9",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-fixed-variant": "#920027",
+                        "on-primary-fixed-variant": "#663e00",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#ffdbd0",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#40000c",
+                        "surface-dim": "#dadada",
+                        "tertiary-container": "#ff8e95",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ffb961",
+                        "tertiary-fixed": "#ffdada",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-surface-variant": "#534434",
+                        "outline": "#867461",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-variant": "#e2e2e2",
+                        "surface-bright": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#f39c12",
+                        "on-secondary-fixed-variant": "#5d4037",
+                        "on-secondary-fixed": "#2c160e",
+                        "secondary": "#77574d",
+                        "outline-variant": "#d8c3ad",
+                        "on-primary-fixed": "#2b1700",
+                        "secondary-container": "#fed3c7",
+                        "tertiary-fixed-dim": "#ffb3b6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Work Sans"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-bg { background-color: #f3f3f3; }
+        .smooth-scroll-anchor { scroll-behavior: smooth; }
+        .glass-nav { backdrop-filter: blur(20px); }
+    </style>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container" page-bakery>
+<\!-- Global Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-[0_8px_30px_rgb(93,64,55,0.04)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<a class="font-headline text-2xl font-bold tracking-tight text-stone-900" href="index.html">Culture &amp; Crust</a>
+<div class="hidden md:flex items-center gap-8">
+        <a class="text-amber-600 font-semibold border-b-2 border-amber-600 font-headline italic text-lg" href="bakery.html">The Bakery</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="ferments.html">The Ferments</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="kitchen.html">The Kitchen</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="essence.html">The Essence</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="equipment.html">Equipment</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-stone-600 cursor-pointer hover:opacity-80 transition-all duration-300">account_circle</span>
+</div>
+</div>
+</nav><main class="pt-24 pb-12">
+<!-- Hero Section -->
+<header class="relative px-8 md:px-16 py-12 md:py-24 max-w-screen-2xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="font-label text-xs uppercase tracking-widest text-primary mb-4 block">Archive No. 042 / Sourdough</span>
+<h1 class="font-headline text-6xl md:text-8xl font-bold text-on-surface leading-[0.9] mb-8 italic">75% Hydration <br/>Sourdough Batard.</h1>
+<p class="font-body text-xl text-secondary max-w-xl leading-relaxed">A study in tension, steam, and patience. This formula balances a resilient crumb with the characteristic open structure of a high-hydration loaf.</p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden shadow-2xl">
+<img alt="Artisan sourdough batard with deep scoring" class="w-full h-full object-cover" data-alt="Close-up of a freshly baked sourdough batard on a rustic wooden board with dramatic side lighting highlighting the crust texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1UmDzJJjUtaf0PIQVx-s6xMQHC9kXweH8PLklK2h_58SFVU9SvisdhfaJ8z-A91p1xvaKEV_cW51t4ZcquRtbK264EAgrqsh7WPU-UcME6DYxbqMkvFAPDsE8-u6RoknEIG2VGYitsxSBA0NhwCkHqxfItOygnhUk_5G9U5SHdSiMKY_c6UcFPMd9NPbud37vJ-7HRhJEyjw2uvic8jzDfrU94S-YxGbpS3RPbsIEOzn9wFjJ8zQ6LiacKEQXb4nw3IWp1iTgWtE"/>
+</div>
+<!-- Laboratory Chips Overlaid -->
+<div class="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl flex flex-col gap-3 rounded-lg border border-outline-variant/15 tech-hud">
+<div class="flex items-center gap-4">
+<span class="font-label text-xs font-bold text-secondary uppercase">Hydration</span>
+<span class="font-label text-sm text-primary font-bold">75%</span>
+</div>
+<div class="flex items-center gap-4 border-t border-outline-variant/10 pt-2">
+<span class="font-label text-xs font-bold text-secondary uppercase">Salt</span>
+<span class="font-label text-sm text-primary font-bold">2%</span>
+</div>
+<div class="flex items-center gap-4 border-t border-outline-variant/10 pt-2">
+<span class="font-label text-xs font-bold text-secondary uppercase">Starter</span>
+<span class="font-label text-sm text-primary font-bold">20%</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Bento Grid Stats & Intro -->
+<section class="px-8 md:px-16 max-w-screen-2xl mx-auto py-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10">
+<h3 class="font-label text-xs uppercase text-secondary mb-4 tracking-tighter">Total Time</h3>
+<p class="font-headline text-3xl font-bold">24 Hours</p>
+<p class="font-body text-sm text-secondary mt-2">Inclusive of cold fermentation.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10">
+<h3 class="font-label text-xs uppercase text-secondary mb-4 tracking-tighter">Difficulty</h3>
+<p class="font-headline text-3xl font-bold">Intermediate</p>
+<p class="font-body text-sm text-secondary mt-2">Requires confident hand-shaping.</p>
+</div>
+<div class="bg-primary-container p-8 rounded-xl text-on-primary-container">
+<h3 class="font-label text-xs uppercase opacity-80 mb-4 tracking-tighter">Yield</h3>
+<p class="font-headline text-3xl font-bold">Two 800g Loaves</p>
+<p class="font-body text-sm opacity-80 mt-2">Optimized for home ovens.</p>
+</div>
+</div>
+</section>
+<!-- Editorial Recipe Content -->
+<section class="px-8 md:px-16 max-w-screen-4xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 py-24">
+<!-- Ingredients Sidebar -->
+<div class="lg:col-span-4 lg:sticky lg:top-32 self-start">
+<div class="bg-surface-container-low p-10 rounded-2xl">
+<h2 class="font-headline text-3xl italic mb-8">The Formula</h2>
+<ul class="space-y-6">
+<li class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+<div>
+<p class="font-body font-medium">Bread Flour</p>
+<p class="font-label text-xs text-secondary">12.5% Protein</p>
+</div>
+<span class="font-label font-bold text-primary">800g</span>
+</li>
+<li class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+<div>
+<p class="font-body font-medium">Whole Wheat</p>
+<p class="font-label text-xs text-secondary">Stone-ground</p>
+</div>
+<span class="font-label font-bold text-primary">200g</span>
+</li>
+<li class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+<div>
+<p class="font-body font-medium">Water</p>
+<p class="font-label text-xs text-secondary">Filtered (30°C)</p>
+</div>
+<span class="font-label font-bold text-primary">750g</span>
+</li>
+<li class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+<div>
+<p class="font-body font-medium">Levain</p>
+<p class="font-label text-xs text-secondary">Active &amp; Bubbly</p>
+</div>
+<span class="font-label font-bold text-primary">200g</span>
+</li>
+<li class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+<div>
+<p class="font-body font-medium">Fine Sea Salt</p>
+<p class="font-label text-xs text-secondary">Sel de Guérande</p>
+</div>
+<span class="font-label font-bold text-primary">20g</span>
+</li>
+</ul>
+<div class="mt-12">
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-label text-sm uppercase tracking-widest hover:opacity-90 transition-all">Download PDF Guide</button>
+</div>
+</div>
+</div>
+<!-- Step by Step Editorial -->
+<div class="lg:col-span-8">
+<div class="space-y-32">
+<!-- Step 1 -->
+<article class="group">
+<div class="flex items-center gap-4 mb-6">
+<span class="w-12 h-px bg-primary block"></span>
+<span class="font-label text-xs text-primary font-bold tracking-widest">PHASE 01</span>
+</div>
+<h3 class="font-headline text-5xl mb-8 leading-tight">The Autolyse: <br/><span class="italic">Foundational Strength.</span></h3>
+<div class="aspect-video mb-10 overflow-hidden rounded-2xl bg-surface-container">
+<img alt="Mixing flour and water in a bowl" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of hands mixing coarse flour and water in a ceramic bowl, soft morning light hitting the texture of the shaggy dough." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGs_Oub2IxA42Ntu4BCu0dq7lHus0QO8KKK79iLCcbCdbN4bY8KpU_rK9HeqGZLrO00xwbQOSKMuwQFfooiOxrFx4x-EKl2-AXaeVFUZ2_a46CMRH7_Tfi5mzR-BSd6ijrHgVaeTJGHK_GKWGjjT5hxPjFh9yrzEcLJmwaW6nnKpzHAeM9QRsOrh49vm24vBdWKU1Aps6kEYb3vjWLDoyT5WUHOIVl_2I_9IM67sN8hC28OuutKkJh6ANdOuFzBRXQBtFW-BW4kY4"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-4 font-label text-sm uppercase text-secondary">Focus: Hydration</div>
+<div class="md:col-span-8 font-body text-lg leading-relaxed text-stone-700">
+                                Combine the flours and 700g of the water. Mix until no dry flour remains. This shaggy mass will undergo enzymatic activity, breaking down proteins to develop gluten without physical labor. Let rest for 60 minutes.
+                            </div>
+</div>
+</article>
+<!-- Step 2 -->
+<article class="group">
+<div class="flex items-center gap-4 mb-6">
+<span class="w-12 h-px bg-primary block"></span>
+<span class="font-label text-xs text-primary font-bold tracking-widest">PHASE 02</span>
+</div>
+<h3 class="font-headline text-5xl mb-8 leading-tight">Incorporation &amp; <br/><span class="italic">Bulk Fermentation.</span></h3>
+<div class="aspect-video mb-10 overflow-hidden rounded-2xl bg-surface-container">
+<img alt="Stretching and folding sourdough dough" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Hands performing a stretch and fold on a smooth elastic dough in a glass container, highlighting the emerging strength and gas bubbles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANLiKNShB8rwvn43UtZn_duFRy1FUPJIKEwRWZbpbOtz64cajVA27eXpW_ED4i2c6rO3CQmnLLV0ZImxjeBscbZGK-lavvkxnI1b3LpvliBImBn0IPwt5heBjRopsVgDUmv2BzQK4lXiid-on_W78rdZ4PMSfcKswUeF1kOEOv4KGNYBHUZ3MTpJJxrVR2h4idNWTR7Z6f84yaviEOzTrV_g_OhWxPzyz2VcvwBa4cSl4kUuFGhnM0DRnj3ld_nmHCddwUQ3Po7s4"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-4 font-label text-sm uppercase text-secondary">Focus: Elasticity</div>
+<div class="md:col-span-8 font-body text-lg leading-relaxed text-stone-700">
+                                Add the levain and the remaining 50g of water with the salt. Perform four sets of "Stretch and Folds" every 30 minutes. Look for the "Windowpane" effect. The dough should feel airy, pillowy, and vibrant toward the end of the 4-hour bulk.
+                            </div>
+</div>
+</article>
+<!-- Step 3 -->
+<article class="group">
+<div class="flex items-center gap-4 mb-6">
+<span class="w-12 h-px bg-primary block"></span>
+<span class="font-label text-xs text-primary font-bold tracking-widest">PHASE 03</span>
+</div>
+<h3 class="font-headline text-5xl mb-8 leading-tight">The Batard Shape: <br/><span class="italic">Tension and Taper.</span></h3>
+<div class="aspect-video mb-10 overflow-hidden rounded-2xl bg-surface-container">
+<img alt="Shaping a loaf of bread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Artisan baker shaping a batard on a floured marble surface, demonstrating the stitching technique for surface tension." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv-jbRV1TFM7_4hcBDU43UEK7Yq4RBeR_HDEL75_2NqhAQle1SwEyvU_p9p7BuCVbowgy0l1z93jkru0x8rWq6QA7uRSGRQmxtGD2-IF74Z5hMjXb6ith7tKG2H20XxjbN5z3Jl8Eq4o3G6qOFqQn0tzyljlpU3S_m8hkTJJEbiPXJyarfcvdHpOoFo_ifXhaVNklf0nS2KCxp8VO1ySSTOAg_plJJHb_hEj8OHu-s84iZcgx88roCyZgqRQP7CXTYlzBIiqiQukk"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-4 font-label text-sm uppercase text-secondary">Focus: Structural Integrity</div>
+<div class="md:col-span-8 font-body text-lg leading-relaxed text-stone-700">
+                                Gently degas the dough onto a floured surface. Fold the bottom up, the sides in, and roll from the top down. Use your bench scraper to pull the loaf toward you, creating surface tension. Place into floured bannetons and proof in the fridge for 14-16 hours.
+                            </div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Final Result Showcase Asymmetric -->
+<section class="bg-surface-container-low py-32 px-8 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2 order-2 md:order-1">
+<h2 class="font-headline text-6xl italic text-primary mb-6">The Crust.</h2>
+<p class="font-body text-2xl text-secondary leading-relaxed italic mb-8">"Listen to the bread. The 'crackle' as it cools is the final act of a 24-hour symphony."</p>
+<div class="flex gap-4">
+<span class="font-label text-xs bg-white px-4 py-2 rounded-full border border-outline-variant/20 uppercase tracking-tighter">Golden Crust</span>
+<span class="font-label text-xs bg-white px-4 py-2 rounded-full border border-outline-variant/20 uppercase tracking-tighter">Open Crumb</span>
+<span class="font-label text-xs bg-white px-4 py-2 rounded-full border border-outline-variant/20 uppercase tracking-tighter">Wild Ferment</span>
+</div>
+</div>
+<div class="md:w-1/2 order-1 md:order-2">
+<div class="relative">
+<div class="bg-primary/10 absolute -inset-8 blur-3xl rounded-full"></div>
+<img alt="Interior crumb shot of sourdough" class="relative z-10 w-full h-[500px] object-cover rounded-3xl shadow-2xl" data-alt="Interior cross-section of a sourdough loaf showing a glossy, open crumb structure with large irregular alveoli." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeEUuUoJwmuys0038uShMXdtiBfUXuH3o9-aqFadaVB3oGJOtBZ8n3JB3K5TN70qMtwflJ-wW0Mx0jBh16-mEYoye9cgqraFc94KgPMeJqCaGIhuHpJvJxYY9oIVGEC9zhzZoNrtEypn4yh9Xz84lQcJZ9y3CoIQMocfCQO3WldF7XCeBrc80MevLoOgyk018o5zAd4L38oOLTqwvMy_RPWh_sM7cQeRrPq0aK4GWgmcSlxgyJEPkhkzsI4nkYfaX69n6t3T3H2zE"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-stone-100 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 border-t border-stone-200/20 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-serif text-xl font-bold text-stone-800 dark:text-stone-200 mb-6">Culture &amp; Crust</div>
+<p class="font-sans text-sm leading-relaxed text-stone-500 max-w-xs">An exploration of the science and soul of artisan baking. We study the intersection of wild yeast and high-protein grain.</p>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase font-bold mb-6 tracking-widest text-primary">Explore</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-amber-600 transition-colors font-sans text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-amber-600 transition-colors font-sans text-sm" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase font-bold mb-6 tracking-widest text-primary">Connection</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-amber-600 transition-colors font-sans text-sm" href="#">Contact</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-amber-600 transition-colors font-sans text-sm" href="#">About the Lab</a></li>
+</ul>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-stone-200/10 text-center md:text-left">
+<p class="font-sans text-sm text-stone-500 leading-relaxed">© 2024 Culture &amp; Crust. All rights reserved. As an Amazon Associate, we earn from qualifying purchases.</p>
+</div>
+</footer>
+</body></html>

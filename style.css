@@ -1,0 +1,199 @@
+/* ============================================================
+   CULTURE & CRUST — Global Stylesheet
+   System Integration: Living Color Palette + Components
+   ============================================================ */
+
+/* ─── Design Tokens ──────────────────────────────────────── */
+:root {
+  /* Pillar Accent Colors */
+  --color-golden-crust:   #F39C12;  /* Bakery */
+  --color-vibrant-beet:   #C70039;  /* Ferments */
+  --color-deep-umber:     #5D4037;  /* Kitchen */
+  --color-fresh-sage:     #27AE60;  /* Essence */
+
+  /* Core Brand Palette */
+  --color-primary:        #865300;
+  --color-primary-ctr:    #f39c12;
+  --color-surface:        #f9f9f9;
+  --color-surface-low:    #f3f3f3;
+  --color-on-surface:     #1a1c1c;
+  --color-secondary:      #77574d;
+  --color-outline:        #867461;
+  --color-outline-var:    rgba(134, 116, 97, 0.15);
+}
+
+/* ─── Global Base ────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+/* ─── Glass Nav ──────────────────────────────────────────── */
+.glass-nav {
+  background-color: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ─── Tonal Shift ────────────────────────────────────────── */
+.tonal-shift-bg { background-color: #f3f3f3; }
+
+/* ─── Material Symbols ───────────────────────────────────── */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* ─── Navigation ─────────────────────────────────────────── */
+.nav-link {
+  color: #57534e;  /* stone-600 */
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-size: 1.125rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+.nav-link:hover { color: #d97706; /* amber-600 */ }
+
+.nav-link-active {
+  color: #d97706;
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-bottom: 2px solid #d97706;
+  text-decoration: none;
+}
+
+/* ─── Technical HUD ──────────────────────────────────────── */
+/*
+  Wrap any monospace data / lab parameter block in .tech-hud.
+  Use .tech-hud__label for field names, .tech-hud__value for
+  the reading, and .tech-hud__row for each data row.
+*/
+.tech-hud {
+  font-family: 'Space Grotesk', 'Courier New', monospace;
+  letter-spacing: 0.04em;
+}
+
+.tech-hud__label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.625rem;     /* 10px */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-secondary);
+}
+
+.tech-hud__value {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.tech-hud__card {
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid var(--color-outline-var);
+}
+
+.tech-hud__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-outline-var);
+}
+.tech-hud__row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Pillar-tinted value variants */
+.tech-hud__value--bakery   { color: var(--color-golden-crust); }
+.tech-hud__value--ferments { color: var(--color-vibrant-beet); }
+.tech-hud__value--kitchen  { color: var(--color-deep-umber); }
+.tech-hud__value--essence  { color: var(--color-fresh-sage); }
+
+/* ─── Pillar Page Tinting (add class to <body>) ───────────── */
+body.page-bakery   { --pillar-accent: var(--color-golden-crust); }
+body.page-ferments { --pillar-accent: var(--color-vibrant-beet); }
+body.page-kitchen  { --pillar-accent: var(--color-deep-umber); }
+body.page-essence  { --pillar-accent: var(--color-fresh-sage); }
+body.page-equipment{ --pillar-accent: var(--color-primary); }
+
+/* ─── Pillar Color Blocking Utilities ────────────────────── */
+.pillar-bakery-bg   { background-color: var(--color-golden-crust); }
+.pillar-ferments-bg { background-color: var(--color-vibrant-beet); }
+.pillar-kitchen-bg  { background-color: var(--color-deep-umber); }
+.pillar-essence-bg  { background-color: var(--color-fresh-sage); }
+
+.pillar-bakery-text   { color: var(--color-golden-crust); }
+.pillar-ferments-text { color: var(--color-vibrant-beet); }
+.pillar-kitchen-text  { color: var(--color-deep-umber); }
+.pillar-essence-text  { color: var(--color-fresh-sage); }
+
+.pillar-bakery-border   { border-color: var(--color-golden-crust); }
+.pillar-ferments-border { border-color: var(--color-vibrant-beet); }
+.pillar-kitchen-border  { border-color: var(--color-deep-umber); }
+.pillar-essence-border  { border-color: var(--color-fresh-sage); }
+
+/* ─── Path Linker: Cross-Pillar CTA ─────────────────────── */
+/*
+  Used on buttons/anchors that jump between pillar pages,
+  e.g. "Use this in The Kitchen →" in ferments.html.
+*/
+.path-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-primary);
+  border-bottom: 1px solid rgba(134, 83, 0, 0.3);
+  padding-bottom: 2px;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, gap 0.2s;
+}
+.path-link:hover {
+  border-color: var(--color-primary);
+  gap: 0.6rem;
+}
+.path-link .material-symbols-outlined {
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+.path-link:hover .material-symbols-outlined {
+  transform: translateX(3px);
+}
+
+.path-link--ferments {
+  color: var(--color-vibrant-beet);
+  border-bottom-color: rgba(199, 0, 57, 0.3);
+}
+.path-link--ferments:hover { border-color: var(--color-vibrant-beet); }
+
+.path-link--kitchen {
+  color: var(--color-deep-umber);
+  border-bottom-color: rgba(93, 64, 55, 0.3);
+}
+.path-link--kitchen:hover { border-color: var(--color-deep-umber); }
+
+/* ─── Smooth Scroll Anchor Offset ───────────────────────── */
+.scroll-target {
+  scroll-margin-top: 6rem; /* accounts for fixed nav height */
+}
+
+/* ─── Utility: Pillar Accent Overrides ───────────────────── */
+.accent-color  { color: var(--pillar-accent, var(--color-primary)); }
+.accent-border { border-color: var(--pillar-accent, var(--color-primary)); }
+.accent-bg     { background-color: var(--pillar-accent, var(--color-primary)); }

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@300;400;500;600&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "secondary-fixed-dim": "#e7bdb1",
+                "background": "#f9f9f9",
+                "inverse-primary": "#ffb961",
+                "on-primary-container": "#603a00",
+                "on-error": "#ffffff",
+                "on-surface": "#1a1c1c",
+                "surface-container": "#eeeeee",
+                "inverse-surface": "#2f3131",
+                "surface-tint": "#865300",
+                "surface-container-low": "#f3f3f3",
+                "surface": "#f9f9f9",
+                "primary": "#865300",
+                "tertiary": "#be0036",
+                "on-primary": "#ffffff",
+                "on-secondary-container": "#795950",
+                "on-tertiary-container": "#890024",
+                "error": "#ba1a1a",
+                "primary-fixed": "#ffddb9",
+                "surface-container-high": "#e8e8e8",
+                "on-tertiary-fixed-variant": "#920027",
+                "on-primary-fixed-variant": "#663e00",
+                "on-secondary": "#ffffff",
+                "on-background": "#1a1c1c",
+                "secondary-fixed": "#ffdbd0",
+                "surface-container-lowest": "#ffffff",
+                "on-tertiary-fixed": "#40000c",
+                "surface-dim": "#dadada",
+                "tertiary-container": "#ff8e95",
+                "error-container": "#ffdad6",
+                "primary-fixed-dim": "#ffb961",
+                "tertiary-fixed": "#ffdada",
+                "surface-container-highest": "#e2e2e2",
+                "on-surface-variant": "#534434",
+                "outline": "#867461",
+                "inverse-on-surface": "#f1f1f1",
+                "surface-variant": "#e2e2e2",
+                "surface-bright": "#f9f9f9",
+                "on-error-container": "#93000a",
+                "on-tertiary": "#ffffff",
+                "primary-container": "#f39c12",
+                "on-secondary-fixed-variant": "#5d4037",
+                "on-secondary-fixed": "#2c160e",
+                "secondary": "#77574d",
+                "outline-variant": "#d8c3ad",
+                "on-primary-fixed": "#2b1700",
+                "secondary-container": "#fed3c7",
+                "tertiary-fixed-dim": "#ffb3b6"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Noto Serif"],
+                "body": ["Work Sans"],
+                "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Work Sans', sans-serif; background-color: #f9f9f9; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .font-mono { font-family: 'Space Grotesk', monospace; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body class="text-on-surface" page-ferments>
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-[0_8px_30px_rgb(93,64,55,0.04)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<a class="font-headline text-2xl font-bold tracking-tight text-stone-900" href="index.html">Culture &amp; Crust</a>
+<div class="hidden md:flex items-center gap-8">
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="bakery.html">The Bakery</a>
+        <a class="text-amber-600 font-semibold border-b-2 border-amber-600 font-headline italic text-lg" href="ferments.html">The Ferments</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="kitchen.html">The Kitchen</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="essence.html">The Essence</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="equipment.html">Equipment</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-stone-600 cursor-pointer hover:opacity-80 transition-all duration-300">account_circle</span>
+</div>
+</div>
+</nav>
+<main class="pt-32 px-6 md:px-12 max-w-screen-2xl mx-auto pb-24">
+<!-- Header Section: Journal Style -->
+<div id="ferment-recipe" class="scroll-target"></div>
+<header class="flex flex-col md:flex-row gap-12 items-end mb-24">
+<div class="md:w-3/5">
+<span class="font-mono text-xs uppercase tracking-widest text-tertiary mb-4 block">Archive No. 042 // Stone Fruit Series</span>
+<h1 class="font-serif text-6xl md:text-8xl italic leading-tight text-stone-900">Lacto-Fermented Red Plums</h1>
+<p class="mt-8 font-body text-xl text-secondary max-w-xl leading-relaxed">
+                    Captured at the peak of late summer, these plums undergo a transformative brine process that yields a deep umami profile with a vibrant, acidic finish.
+                </p>
+</div>
+<div class="md:w-2/5 flex flex-col gap-6">
+<div class="bg-surface-container-low p-8 rounded-lg">
+<h3 class="tech-hud font-mono text-sm font-bold text-stone-900 mb-6 uppercase tracking-tighter">Laboratory Parameters</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center border-b border-outline-variant/15 pb-2">
+<span class="font-body text-sm text-secondary">Salinity</span>
+<span class="font-mono font-bold text-tertiary">2.5%</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/15 pb-2">
+<span class="font-body text-sm text-secondary">Temp</span>
+<span class="font-mono font-bold text-stone-900">20°C</span>
+</div>
+<div class="flex justify-between items-center pb-2">
+<span class="font-body text-sm text-secondary">Time</span>
+<span class="font-mono font-bold text-stone-900">7 Days</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Asymmetric Bento Grid Section -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-24">
+<!-- Hero Image Visual -->
+<div class="md:col-span-7 aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden">
+<img alt="Fermented Plums" class="w-full h-full object-cover" data-alt="Close-up of deep red plums in a glass fermentation crock, submerged in a ruby-colored brine with soft sun-drenched lighting and bubbles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqb85cMb1Uf9muaGxKsoBBfgWkEKoo3CWrYYm75IC832ewAmKH1aSLf4xKBQfTBMd05m2PSDE4vmZaSp1nWRe9DByHNiIbPjybFVWJVE9xdM2AgdP1vQ0rlGfRNsUQwYJ6k9uJeuOB-BMQq3N-9oR302jcv4ASRaQWRMmcw-6IUX5r6j3zOinfS4cebZmBpl_i_phy6qXJjAX9n10zmt2npCZgf8yWkjP7Rti2rdR6hdTziSE17ZtzFw5r5CHZ9RnifwcstTm24Sg"/>
+</div>
+<!-- Technical Detail Card -->
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="bg-surface-container-lowest p-10 shadow-[0_30px_60px_rgba(93,64,55,0.06)] rounded-xl h-full flex flex-col justify-between">
+<div>
+<h2 class="font-serif text-3xl mb-6">The Brine Mechanics</h2>
+<p class="font-body text-secondary leading-relaxed mb-8 text-lg">
+                            Lacto-fermentation relies on the suppression of putrefactive bacteria while fostering Lactobacillus growth. The precise salinity of 2.5% ensures cellular structural integrity while promoting a clean, acidic profile.
+                        </p>
+</div>
+<!-- Salinity Bar Visualization -->
+<div class="space-y-4">
+<div class="flex justify-between items-end">
+<span class="tech-hud font-mono text-xs uppercase text-tertiary tracking-widest">Salinity Concentration</span>
+<span class="font-mono text-2xl font-bold text-tertiary">2.5%</span>
+</div>
+<div class="h-4 bg-surface-container rounded-full relative overflow-hidden">
+<div class="absolute inset-y-0 left-0 bg-tertiary w-[25%]"></div>
+<div class="absolute inset-y-0 left-[25%] w-px bg-white/30"></div>
+</div>
+<div class="flex justify-between font-mono text-[10px] text-stone-400">
+<span>0.0%</span>
+<span>Optimal Range</span>
+<span>10.0%</span>
+</div>
+</div>
+</div>
+<div class="bg-tertiary p-10 rounded-xl text-on-tertiary">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="science">science</span>
+<h3 class="font-serif text-2xl mb-2 italic">Scientific Note</h3>
+<p class="font-body text-sm opacity-90 leading-relaxed">
+                        Red plums contain high levels of anthocyanins. During the 7-day cycle at 20°C, the pigment leaches into the brine, creating a neon-pink syrup that is as versatile as the fruit itself.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Recipe Content - Editorial Layout -->
+<section class="max-w-4xl mx-auto py-24 border-t border-outline-variant/15">
+<div class="flex flex-col md:flex-row gap-16">
+<div class="md:w-1/3">
+<h4 class="font-mono text-sm uppercase tracking-widest text-tertiary mb-6">Components</h4>
+<ul class="space-y-6">
+<li class="flex flex-col">
+<span class="font-serif text-lg text-stone-900">Organic Red Plums</span>
+<span class="font-mono text-xs text-secondary mt-1">1000g // Firm &amp; Ripe</span>
+</li>
+<li class="flex flex-col">
+<span class="font-serif text-lg text-stone-900">Unrefined Sea Salt</span>
+<span class="font-mono text-xs text-secondary mt-1">25g // Non-Iodized</span>
+</li>
+<li class="flex flex-col">
+<span class="font-serif text-lg text-stone-900">Filtered Water</span>
+<span class="font-mono text-xs text-secondary mt-1">q.s. // Chlorine-free</span>
+</li>
+</ul>
+</div>
+<div class="md:w-2/3">
+<h4 class="font-mono text-sm uppercase tracking-widest text-tertiary mb-6">The Methodology</h4>
+<div class="space-y-12">
+<div class="flex gap-8">
+<span class="font-mono text-2xl text-stone-300">01</span>
+<div>
+<h5 class="font-serif text-xl font-bold mb-2">Preparation &amp; Cleansing</h5>
+<p class="font-body text-secondary leading-relaxed">Wash the fruit thoroughly in cold water. Halve the plums and remove the pits. Maintaining skin integrity is vital for the final texture.</p>
+</div>
+</div>
+<div class="flex gap-8">
+<span class="font-mono text-2xl text-stone-300">02</span>
+<div>
+<h5 class="font-serif text-xl font-bold mb-2">The Osmotic Draw</h5>
+<p class="font-body text-secondary leading-relaxed">Toss plums with the weighted salt. Let sit for 30 minutes to begin the osmotic release of natural juices before submerging in the vessel.</p>
+</div>
+</div>
+<div class="flex gap-8">
+<span class="font-mono text-2xl text-stone-300">03</span>
+<div>
+<h5 class="font-serif text-xl font-bold mb-2">The 7-Day Cycle</h5>
+<p class="font-body text-secondary leading-relaxed">Seal the vessel with a fermentation weight to ensure full submersion. Store in a dark space at a constant 20°C. Monitor pH levels daily until a target of 3.4 is reached.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery / Visual Rhythm Section -->
+<div class="flex flex-col md:flex-row gap-8">
+<div class="md:w-1/2 aspect-video bg-surface-container overflow-hidden rounded-xl">
+<img alt="Glass Jar" class="w-full h-full object-cover" data-alt="A collection of minimalist glass fermentation jars on a clean stone countertop with soft shadows and organic textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-IG0kjeD720pNXOhvDbRZpVTmDSGgaEJqgU3UDn8mH4cIru-ewMCHJXPvPB8wm97GnpDEHxmNC4HaluByuuT5BS7gwiXwVxNxTxT13xswpOWPLUcMIlkK96NZRXuDJSk5TSSXnzcfs5FUHutxV44s04L7Z5RabWHOeJCbV5bgENtjbdsO_z6rkqwsjZsvwa6Yx-HS6MvnfNLBvYxh5G-nEMupZNxDAvooQPRVsi4Fwe-1FzndudzcvGR_nIP979ccr7WZtxcFvdQ"/>
+</div>
+<div class="md:w-1/2 flex items-center justify-center p-12 bg-surface-container-low rounded-xl">
+<blockquote class="font-serif text-3xl italic text-stone-900 text-center leading-snug">
+                    "Fermentation is the art of controlled decay; a dance between nature and the laboratory."
+                </blockquote>
+</div>
+</div>
+
+<!-- ── Path Linker: Use This in The Kitchen ── -->
+<section class="mt-16 p-10 bg-surface-container-lowest border border-outline-variant/20 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-8">
+<div>
+<p class="tech-hud__label mb-3">Path Linker / The Loop</p>
+<h3 class="font-serif text-2xl italic text-stone-900 mb-2">These plums have a destination.</h3>
+<p class="font-body text-secondary text-sm max-w-md leading-relaxed">The lacto-fermented brine from this recipe is the key ingredient in our Plum-Brine Glazed Cod. Follow the loop from Ferments into The Kitchen.</p>
+</div>
+<a class="path-link path-link--kitchen flex-shrink-0 px-6 py-3 border border-[#5D4037]/30 rounded-lg hover:bg-[#5D4037]/5 transition-colors"
+   href="kitchen.html#recipe-glazed-cod">
+  Use this in The Kitchen
+  <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</section>
+
+</main>
+<!-- Footer Section -->
+<footer class="w-full mt-24 bg-stone-100 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 border-t border-stone-200/20 max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-serif text-xl font-bold text-stone-800">Culture &amp; Crust</span>
+<p class="font-sans text-sm leading-relaxed text-stone-500">Exploring the intersection of culinary tradition and scientific precision through the lens of fermentation and baking.</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-mono text-xs uppercase tracking-widest text-stone-900">Explorations</span>
+<a class="font-sans text-sm text-stone-500 hover:text-amber-600 transition-colors" href="#">Sourdough Library</a>
+<a class="font-sans text-sm text-stone-500 hover:text-amber-600 transition-colors" href="#">Koji Methodology</a>
+<a class="font-sans text-sm text-stone-500 hover:text-amber-600 transition-colors" href="#">Seasonal Archive</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-mono text-xs uppercase tracking-widest text-stone-900">Lab Reports</span>
+<a class="font-sans text-sm text-stone-500 hover:text-amber-600 transition-colors" href="#">Privacy Policy</

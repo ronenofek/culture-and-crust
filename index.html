@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Work+Sans:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#e7bdb1",
+                    "background": "#f9f9f9",
+                    "inverse-primary": "#ffb961",
+                    "on-primary-container": "#603a00",
+                    "on-error": "#ffffff",
+                    "on-surface": "#1a1c1c",
+                    "surface-container": "#eeeeee",
+                    "inverse-surface": "#2f3131",
+                    "surface-tint": "#865300",
+                    "surface-container-low": "#f3f3f3",
+                    "surface": "#f9f9f9",
+                    "primary": "#865300",
+                    "tertiary": "#be0036",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#795950",
+                    "on-tertiary-container": "#890024",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#ffddb9",
+                    "surface-container-high": "#e8e8e8",
+                    "on-tertiary-fixed-variant": "#920027",
+                    "on-primary-fixed-variant": "#663e00",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "secondary-fixed": "#ffdbd0",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#40000c",
+                    "surface-dim": "#dadada",
+                    "tertiary-container": "#ff8e95",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#ffb961",
+                    "tertiary-fixed": "#ffdada",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-surface-variant": "#534434",
+                    "outline": "#867461",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-variant": "#e2e2e2",
+                    "surface-bright": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#f39c12",
+                    "on-secondary-fixed-variant": "#5d4037",
+                    "on-secondary-fixed": "#2c160e",
+                    "secondary": "#77574d",
+                    "outline-variant": "#d8c3ad",
+                    "on-primary-fixed": "#2b1700",
+                    "secondary-container": "#fed3c7",
+                    "tertiary-fixed-dim": "#ffb3b6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Work Sans"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .tonal-shift-bg {
+            background-color: #f3f3f3;
+        }
+    </style>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<\!-- Global Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-[0_8px_30px_rgb(93,64,55,0.04)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<a class="font-headline text-2xl font-bold tracking-tight text-stone-900" href="index.html">Culture &amp; Crust</a>
+<div class="hidden md:flex items-center gap-8">
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="bakery.html">The Bakery</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="ferments.html">The Ferments</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="kitchen.html">The Kitchen</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="essence.html">The Essence</a>
+        <a class="text-stone-600 hover:text-amber-600 transition-colors font-headline italic text-lg" href="equipment.html">Equipment</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-1.5 rounded-full border-b border-stone-900/5">
+<span class="material-symbols-outlined text-stone-500 text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm font-label placeholder:text-stone-400" placeholder="Search the Lab..." type="text"/>
+</div>
+<span class="material-symbols-outlined text-stone-600 cursor-pointer hover:opacity-80 transition-all duration-300">account_circle</span>
+</div>
+</div>
+</nav><main class="pt-24 lg:pt-32">
+<!-- Hero Section -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-24 lg:mb-40">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-primary mb-6 block">Editorial No. 01 — Volume I</span>
+<h1 class="font-headline text-5xl lg:text-7xl font-bold leading-[1.1] text-stone-900 mb-8 italic">
+                        Modern Alchemy. <br/>
+                        The art of the <span class="text-amber-600">slow change.</span>
+</h1>
+<p class="text-lg lg:text-xl text-stone-600 max-w-md leading-relaxed mb-10">
+                        Investigating the intersection of wild yeast, lactic acid fermentation, and the ancestral fire. A sensory journey through time and microscopic landscapes.
+                    </p>
+<div class="flex flex-wrap gap-6 items-center">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-all">
+                            Begin Exploration
+                        </button>
+<button class="text-primary font-medium hover:underline decoration-2 underline-offset-8 transition-all">
+                            View Journals
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 relative">
+<div class="aspect-[4/5] lg:aspect-square overflow-hidden rounded-xl shadow-2xl shadow-stone-900/10 transform lg:translate-x-12">
+<img class="w-full h-full object-cover" data-alt="Close-up of a bubbling deep purple cabbage fermentation brine in a glass jar next to a rustic loaf of sourdough bread dusted with flour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJeqf9HdXhijLgxFeskjHTRpgSRwh6maLOfMG0qSxRRQG0xeAetsLuH4IIngAUvqCIXWUOQITvfgEfCWrHOFlH-z0iv5WUOxiRwtZhARjAZ4RDM5kzvi_SzljrcT8jF-eCH-CJGztfGeSM5iJ_cddpDI2Vv8dJ7G04_Ewxw9P7CfM2YYCCDSymG9JmfXqnWPbCelLgbcxdll3mrT01IjGx-gPKoI6IzuBzZhUG3II3nq2-wOI48T2t0oT67yfjN1gU-6EbSjwTeIY"/>
+</div>
+<div class="hidden lg:block absolute -bottom-10 -left-10 bg-white p-8 max-w-xs shadow-xl border border-stone-100">
+<span class="font-label text-[10px] uppercase tracking-widest text-stone-400 block mb-2 tech-hud__label">Micro-Data</span>
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="font-body text-sm font-medium">Hydration</span>
+<span class="font-label text-sm text-primary">82%</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body text-sm font-medium">pH Level</span>
+<span class="font-label text-sm text-tertiary">3.8</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pillar Navigation Tiles (The Glow Grid) -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-32">
+<div class="mb-16">
+<h2 class="font-headline text-3xl font-bold text-stone-900">The Four Pillars</h2>
+<div class="h-1 w-24 bg-primary mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Bakery: Golden Crust -->
+<a class="group relative aspect-[4/5] bg-stone-900 overflow-hidden flex flex-col justify-end p-8" href="#">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-40 transition-all duration-700" data-alt="Interior crumb shot of a freshly sliced sourdough bread with large air pockets and golden crust" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6OmUDpZlJozb9N2nMOd55c0xxUFN11a__J7QaJ80K0CbXbOmvXRb4GWXnHvjyuNAlzMPMfAGLMDWPspoIAKAkzvUGpA3_RfL5Vv3YMzP8TsD3_Yqk76sQAGbi_IDcNpN9RFQzj2BVcrUB7y4Nqi4AkHlJepdP7Kiyu8c0lSL5-fTu41zI-0h3z4ehTe3ltHTi27weHMnBtNvyjrU7C_eQsEat1DP1AxP6m_LCMGvpezWtuArdTPo8UaAoDR2cdkuAIRs9PEPSwBI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#F39C12]/80 to-transparent mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative z-10">
+<span class="font-label text-[10px] text-white/70 uppercase tracking-widest block mb-2">Pillar 01</span>
+<h3 class="font-headline text-2xl text-white font-bold mb-4">The Bakery</h3>
+<div class="w-0 group-hover:w-full h-0.5 bg-white transition-all duration-500"></div>
+</div>
+</a>
+<!-- Ferments: Vibrant Beet -->
+<a class="group relative aspect-[4/5] bg-stone-900 overflow-hidden flex flex-col justify-end p-8" href="#">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-40 transition-all duration-700" data-alt="Rows of colourful fermented vegetable jars including purple sauerkraut and carrots with vibrant brine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa5wPh5vdlACcDWCMltNEroR2CBqIvok0ag39PdgAvmdaiT0oSRdC-fNJLwWGgAnKJkhEAEKs-laZ5iwhsMZZkBae--j1ySh26D93IU0l2mW4F1ze1bcPSctsU3iyY8mhAXKU5aGW-ajMaCY6eSMNKJvURo_NVqwuNYDDrkNt0c_xenNn13ybrz41cVLg1LmCuXM-jqG9aGkVKXs0QBwWrPikXjqaOE4tyYy2oDw9KyAp99hNHyYxUXbSzsF141rSYmdcxH3c0mLY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#C70039]/80 to-transparent mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative z-10">
+<span class="font-label text-[10px] text-white/70 uppercase tracking-widest block mb-2">Pillar 02</span>
+<h3 class="font-headline text-2xl text-white font-bold mb-4">The Ferments</h3>
+<div class="w-0 group-hover:w-full h-0.5 bg-white transition-all duration-500"></div>
+</div>
+</a>
+<!-- Kitchen: Deep Umber -->
+<a class="group relative aspect-[4/5] bg-stone-900 overflow-hidden flex flex-col justify-end p-8" href="#">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-40 transition-all duration-700" data-alt="Chef working in a warm dimly lit rustic kitchen with wood textures and cast iron equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRmJWitXhJaSmcpwwFRmtdqewXsgJouSA4IKoFs1SjLbyVFuMB2Nmp1pF44zoPI-QtmcEhni0UTWQ_9YjEEgjutZxJuTUscM0NCS417W5eI0JzGJxY6uSfT3DYSXjLv0wLlrJC4g0sE-jh0l6jlRHJNie_QKdN8dAVqxg0C513vmYihIA9CwVoqU4NF-RH3WS3u6-F8pAYv8M-KX4rfmpXXCs1ydxH3gcJThlVvSJHH6LuaqmvkO6DqH6tblXd3rYbMYcxfzJzWDg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#5D4037]/80 to-transparent mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative z-10">
+<span class="font-label text-[10px] text-white/70 uppercase tracking-widest block mb-2">Pillar 03</span>
+<h3 class="font-headline text-2xl text-white font-bold mb-4">The Kitchen</h3>
+<div class="w-0 group-hover:w-full h-0.5 bg-white transition-all duration-500"></div>
+</div>
+</a>
+<!-- Essence: Fresh Sage -->
+<a class="group relative aspect-[4/5] bg-stone-900 overflow-hidden flex flex-col justify-end p-8" href="#">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-40 transition-all duration-700" data-alt="Close-up of fresh organic herbs like sage and rosemary on a rustic table with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG3l5NoGJLIFoXuGA81faBO8TPipSzByTypWhYrSb3HS4LSRdZ3vlQ0oXDR4U7lJqwfIbYe3m_KtQH6OuYgBDVu4b891v5zRoA11LMTzuWk2DMmwO4B8QFEQDc20CnEPLTmMnPIuTjFq63MQ6bUCk0uIJUjzhuUeeodgv6mH8HM-YFghM09PAy-9AEAFcPTPUT7Wht0B8LD8pPmBnuE3VWP-NRyXq44cWkv7LbQ5zfkthlRcxIJTUn93trMG5a4cALB7nAsKurPZA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#27AE60]/80 to-transparent mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative z-10">
+<span class="font-label text-[10px] text-white/70 uppercase tracking-widest block mb-2">Pillar 04</span>
+<h3 class="font-headline text-2xl text-white font-bold mb-4">The Essence</h3>
+<div class="w-0 group-hover:w-full h-0.5 bg-white transition-all duration-500"></div>
+</div>
+</a>
+</div>
+</section>
+<!-- Bento Editorial Section -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-32">
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto lg:h-[700px]">
+<div class="md:col-span-2 md:row-span-2 bg-stone-100 rounded-lg overflow-hidden group relative p-12 flex flex-col justify-between">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-primary block mb-6">Scientific Rigor</span>
+<h2 class="font-headline text-4xl lg:text-5xl font-bold text-stone-900 leading-tight mb-8">The Physics of <br/> Oven Spring</h2>
+<p class="font-body text-lg text-stone-600 leading-relaxed max-w-sm">Understanding how water vapor and high heat create the perfect expansion in your wild-yeast dough.</p>
+</div>
+<div class="mt-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-white rounded-full text-xs font-label text-stone-500">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> Temperature Critical
+                        </div>
+</div>
+<img class="absolute bottom-0 right-0 w-2/3 h-2/3 object-contain opacity-20 pointer-events-none group-hover:translate-x-4 transition-transform duration-1000" data-alt="Artistic abstract shot of heat waves rising or steam coming off fresh bread in a bakery oven" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO7npdq_JoIkYzk8rwOqsXr7QSEeE-vgl_kWkCinrm0YTIFHPlj7eBPtPbVdDiPuJ2q0F_BGwOtY3Jby6TAz8joN48xkrinzqXRgr6xN_J4J1_7ryy0SpVUfBMSgwzdBqF9iRx5b9DIaw0HlRKTHSq68qtxjNP9m767XuL0Lup0q_H2OfqDQ8__dolq113bCWLBLOQ51zwbObG3JG_z3iz17Wswes_jIgWaU7MyOPpHvKsPYCdW2d1vNB5rP-1Ovqm45p86qxKnOo"/>
+</div>
+<div class="md:col-span-2 bg-stone-900 rounded-lg overflow-hidden relative group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-1000" data-alt="Microscopic texture of fermented dough or a close-up of yeast culture under soft warm light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWCvV9m3TraEi5MwIrZzZNIle7NEdaalt_fONJ9vRiCn6IuPmTb7AKwfcHP0x-rhQ8eYHVmPtezq2sxsqAMf6kQkG8uPtq1PgbriAw9oXIZpMeZ1vy_ycYigTrIpjP0HqfvV27QaS3ka_Iu4gvBVIEEV65g6sF70cTI_2JJLjGeHnyvgEqd1J8HRKJh1-2jIHVsVJK-CovSSKcxQvTZilSSlnc2l_iufqHQ9by9JbkX1uwIAz2BrEHmgQv04aGff-gBtPtiDUVmDc"/>
+<div class="relative z-10 p-8 h-full flex flex-col justify-end">
+<h3 class="font-headline text-2xl text-white font-bold">Wild Culture Repository</h3>
+<p class="text-white/70 font-body mt-2">Access our library of 50+ heirloom sourdough starters.</p>
+</div>
+</div>
+<div class="bg-[#C70039] rounded-lg p-8 flex flex-col justify-between text-white">
+<span class="material-symbols-outlined text-4xl" data-icon="science">science</span>
+<div>
+<h4 class="font-label text-lg font-bold">Ferment Lab</h4>
+<p class="text-sm opacity-80 mt-2">Active experiments in koji and lacto-fermentation.</p>
+</div>
+</div>
+<div class="bg-surface-container-highest rounded-lg p-8 flex flex-col justify-between group">
+<span class="material-symbols-outlined text-4xl text-secondary" data-icon="menu_book">menu_book</span>
+<div>
+<h4 class="font-headline text-lg font-bold text-stone-900 italic">The Scribe</h4>
+<p class="text-sm text-stone-500 mt-2">Documenting the sensory shifts of time.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-stone-100 py-16 px-12 border-t border-stone-200/20 tonal-shift-bg">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<div class="font-serif text-xl font-bold text-stone-800 mb-6">Culture &amp; Crust</div>
+<p class="text-stone-500 font-sans text-sm leading-relaxed mb-8">
+                    An editorial lab dedicated to the intersection of ancestral craft and modern culinary science.
+                </p>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label text-xs uppercase tracking-widest text-stone-400 mb-6">Explorations</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="bakery.html">The Bakery</a></li>
+<li><a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="ferments.html">The Ferments</a></li>
+<li><a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="kitchen.html">The Kitchen</a></li>
+<li><a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="essence.html">The Essence</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label text-xs uppercase tracking-widest text-stone-400 mb-6">The Lab</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-stone-500 hover:text-amber-600 transition-colors text-sm" href="#">Contact</a></li>
+<li><a class="text-amber-600 underline text-sm" href="#">About the Lab</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label text-xs uppercase tracking-widest text-stone-400 mb-6">Dispatch</h4>
+<p class="text-xs text-stone-500 mb-4 italic">Join the flow. Monthly editorial in your inbox.</p>
+<div class="flex border-b border-stone-300 py-2">
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full p-0 placeholder:text-stone-300" placeholder="Email address" type="email"/>
+<button class="material-symbols-outlined text-stone-400 hover:text-stone-900 transition-colors">east</button>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-16 pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-stone-500 font-sans text-sm">© 2024 Culture &amp; Crust. All rights reserved. As an Amazon Associate, we earn from qualifying purchases.</span>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-stone-400 cursor-pointer hover:text-stone-900">radio_button_checked</span>
+<span class="material-symbols-outlined text-stone-400 cursor-pointer hover:text-stone-900">potted_plant</span>
+<span class="material-symbols-outlined text-stone-400 cursor-pointer hover:text-stone-900">liquor</span>
+</div>
+</div>
+</footer>
+</body></html>
